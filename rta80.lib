@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Switch
+#
+DEF Switch SW 0 40 Y Y 1 F N
+F0 "SW" 100 150 50 H V L CNN
+F1 "Switch" 120 -35 50 H V R CNN
+F2 "" 100 150 50 H I C CNN
+F3 "" 100 150 50 H I C CNN
+DRAW
+C -180 55 21 0 1 0 N
+C 180 55 21 1 1 0 N
+S -200 100 200 90 0 1 0 N
+P 5 0 1 0 -105 100 -50 150 50 150 105 100 100 100 N
+X ~ ~ -280 55 100 R 50 50 1 1 I
+X ~ ~ 280 55 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library
