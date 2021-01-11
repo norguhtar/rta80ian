@@ -1,4 +1,218 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L kbd:ProMicro U1
+U 1 1 5FFB080D
+P 1850 1700
+F 0 "U1" H 1850 2537 60  0000 C CNN
+F 1 "ProMicro" H 1850 2431 60  0000 C CNN
+F 2 "" H 1950 650 60  0000 C CNN
+F 3 "" H 1950 650 60  0000 C CNN
+	1    1850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L rta80:Switch SW?
+U 1 1 5FFB1969
+P 6150 1400
+F 0 "SW?" H 6150 1715 50  0000 C CNN
+F 1 "Switch" H 6150 1624 50  0000 C CNN
+F 2 "" H 6250 1550 50  0001 C CNN
+F 3 "" H 6250 1550 50  0001 C CNN
+	1    6150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L rta80:Switch SW?
+U 1 1 5FFB1C5C
+P 7000 1400
+F 0 "SW?" H 7000 1715 50  0000 C CNN
+F 1 "Switch" H 7000 1624 50  0000 C CNN
+F 2 "" H 7100 1550 50  0001 C CNN
+F 3 "" H 7100 1550 50  0001 C CNN
+	1    7000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:MJ-4PP-9 J?
+U 1 1 5FFB2A14
+P 1600 5600
+F 0 "J?" H 1631 5876 50  0000 C CNN
+F 1 "MJ-4PP-9" H 1631 5785 50  0000 C CNN
+F 2 "" H 1875 5775 50  0001 C CNN
+F 3 "~" H 1875 5775 50  0001 C CNN
+	1    1600 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1350 1150 1350
+Wire Wire Line
+	1150 1450 1000 1450
+Wire Wire Line
+	1000 1450 1000 1350
+Wire Wire Line
+	900  1350 1000 1350
+Connection ~ 1000 1350
+$Comp
+L power:+5V #PWR?
+U 1 1 5FFCA1D6
+P 1550 750
+F 0 "#PWR?" H 1550 600 50  0001 C CNN
+F 1 "+5V" H 1565 923 50  0000 C CNN
+F 2 "" H 1550 750 50  0001 C CNN
+F 3 "" H 1550 750 50  0001 C CNN
+	1    1550 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FFCAC7F
+P 900 1350
+F 0 "#PWR?" H 900 1100 50  0001 C CNN
+F 1 "GND" V 905 1222 50  0000 R CNN
+F 2 "" H 900 1350 50  0001 C CNN
+F 3 "" H 900 1350 50  0001 C CNN
+	1    900  1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FFCDE27
+P 2850 1250
+F 0 "#PWR?" H 2850 1000 50  0001 C CNN
+F 1 "GND" V 2855 1122 50  0000 R CNN
+F 2 "" H 2850 1250 50  0001 C CNN
+F 3 "" H 2850 1250 50  0001 C CNN
+	1    2850 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 1250 2850 1250
+Text GLabel 2550 1350 2    50   Input ~ 0
+RESET
+Text GLabel 1150 1550 0    50   Input ~ 0
+SDA
+Text GLabel 1150 1650 0    50   Input ~ 0
+SCL
+Text GLabel 1150 1850 0    50   Input ~ 0
+row0
+Text GLabel 1150 1950 0    50   Input ~ 0
+row1
+Text GLabel 1150 2050 0    50   Input ~ 0
+row2
+Text GLabel 1150 2150 0    50   Input ~ 0
+row3
+Text GLabel 2550 1750 2    50   Input ~ 0
+col0
+Text GLabel 2550 1850 2    50   Input ~ 0
+col1
+Text GLabel 2550 1950 2    50   Input ~ 0
+col2
+Text GLabel 2550 2050 2    50   Input ~ 0
+col3
+Text GLabel 2550 2150 2    50   Input ~ 0
+col4
+Text GLabel 2550 2250 2    50   Input ~ 0
+col5
+$Comp
+L Switch:SW_Push RSW1
+U 1 1 5FFCF545
+P 1000 2650
+F 0 "RSW1" H 1000 2935 50  0000 C CNN
+F 1 "SW_RST" H 1000 2844 50  0000 C CNN
+F 2 "" H 1000 2850 50  0001 C CNN
+F 3 "~" H 1000 2850 50  0001 C CNN
+	1    1000 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 2650 2    50   Input ~ 0
+RESET
+$Comp
+L power:GND #PWR?
+U 1 1 5FFCFBCD
+P 800 2650
+F 0 "#PWR?" H 800 2400 50  0001 C CNN
+F 1 "GND" H 805 2477 50  0000 C CNN
+F 2 "" H 800 2650 50  0001 C CNN
+F 3 "" H 800 2650 50  0001 C CNN
+	1    800  2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:MJ-4PP-9 J2
+U 1 1 5FFD04B3
+P 950 3300
+F 0 "J2" H 981 3576 50  0000 C CNN
+F 1 "4PIN" H 981 3485 50  0000 C CNN
+F 2 "" H 1225 3475 50  0001 C CNN
+F 3 "~" H 1225 3475 50  0001 C CNN
+	1    950  3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2550 1150
+NoConn ~ 1150 1750
+Wire Wire Line
+	2550 1450 2900 1450
+$Comp
+L power:VCC #PWR?
+U 1 1 5FFDF17D
+P 2900 1450
+F 0 "#PWR?" H 2900 1300 50  0001 C CNN
+F 1 "VCC" V 2915 1578 50  0000 L CNN
+F 2 "" H 2900 1450 50  0001 C CNN
+F 3 "" H 2900 1450 50  0001 C CNN
+	1    2900 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 3225 1500 3225
+Wire Wire Line
+	1500 3225 1500 3075
+Wire Wire Line
+	1150 3275 1300 3275
+Wire Wire Line
+	1300 3275 1300 3100
+$Comp
+L power:VCC #PWR?
+U 1 1 5FFE0365
+P 1300 3100
+F 0 "#PWR?" H 1300 2950 50  0001 C CNN
+F 1 "VCC" H 1315 3273 50  0000 C CNN
+F 2 "" H 1300 3100 50  0001 C CNN
+F 3 "" H 1300 3100 50  0001 C CNN
+	1    1300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3325 1300 3325
+Wire Wire Line
+	1300 3325 1300 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5FFE0D0F
+P 1300 3500
+F 0 "#PWR?" H 1300 3250 50  0001 C CNN
+F 1 "GND" H 1305 3327 50  0000 C CNN
+F 2 "" H 1300 3500 50  0001 C CNN
+F 3 "" H 1300 3500 50  0001 C CNN
+	1    1300 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1150 1250 0    50   Input ~ 0
+DATA
+Text GLabel 1150 1150 0    50   Input ~ 0
+LED
 $EndSCHEMATC
