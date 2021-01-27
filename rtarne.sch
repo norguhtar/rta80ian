@@ -232,8 +232,6 @@ Text GLabel 7595 830  1    50   Input ~ 0
 col5
 Text GLabel 3820 1610 0    50   Input ~ 0
 row1
-Text GLabel 3825 2005 0    50   Input ~ 0
-row2
 Text GLabel 3830 2380 0    50   Input ~ 0
 row3
 Text GLabel 3820 1190 0    50   Input ~ 0
@@ -492,4 +490,8 @@ F 3 "" H 7315 2305 50  0001 C CNN
 	1    7215 2155
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3820 1610 8350 1610
+Text GLabel 3825 2005 0    50   Input ~ 0
+row2
 $EndSCHEMATC
